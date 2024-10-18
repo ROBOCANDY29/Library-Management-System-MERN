@@ -74,7 +74,7 @@ resource "azurerm_container_group" "frontend" {
     memory = "1.5"
 
     ports {
-      port     = 4000
+      port     = 5000
       protocol = "TCP"
     }
   }
