@@ -47,7 +47,7 @@ resource "azurerm_container_group" "backend" {
     memory = "1.5"
 
     ports {
-      port     = 5000
+      port     = 4000
       protocol = "TCP"
     }
   }
@@ -74,7 +74,7 @@ resource "azurerm_container_group" "frontend" {
     memory = "1.5"
 
     ports {
-      port     = 3000
+      port     = 4000
       protocol = "TCP"
     }
   }
