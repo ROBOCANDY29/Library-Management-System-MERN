@@ -9,7 +9,6 @@
     "react": "^18.2.0", 
     "react-bootstrap": "^2.8.0", 
     "react-dom": "^18.2.0", 
-    "react-multi-select-component": "^5.0.3", 
     "react-router-dom": "^6.17.0"
   },
   "scripts": {
