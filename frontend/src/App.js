@@ -13,28 +13,7 @@ function App() {
   const { user } = useContext(AuthContext)
 
   return (
-    <Router>
-      <Header />
-      <div className="App">
-        <Switch>
-          <Route exact path='/'>
-            <Home />
-          </Route>
-          <Route exact path='/signin'>
-            {user ? (user.isAdmin ? <Redirect to='/dashboard@admin' />:<Redirect to='/dashboard@member' />) : <Signin />}
-          </Route>
-          <Route exact path='/dashboard@member'>
-            {user ? (user.isAdmin === false ? <MemberDashboard /> : <Redirect to='/' />) : <Redirect to='/' />}
-          </Route>
-          <Route exact path='/dashboard@admin'>
-            {user ? (user.isAdmin === true ? <AdminDashboard /> : <Redirect to='/' />) : <Redirect to='/' />}
-          </Route>
-          <Route exact path='/books'>
-            <Allbooks />
-          </Route>
-        </Switch>
-      </div>
-    </Router>
+    <h1>Hello World</h1>
   );
 }
 
